@@ -2,7 +2,7 @@ import { faTrophy, faPhone, faChartSimple, faUsers, faEnvelope, faReceipt, faSta
 
 
 export const employeesDataList = [
-    {id:1,name:'Dwayne Lynn',role:'Account Executive',tenure:'3 yrs',sales:874,ordersCompleted:5,target:15000,commission:87,attendance:92,performance:58,satisfaction:72,color:0, ordersFulfilled: 123, ordersPending: 23, ordersReturned: 10,
+    {id:1,name:'Dwayne Lynn',role:'Account Executive',tenure:'3 yrs',sales:874,ordersCompleted:5,target:15000,commission:87,attendance:92,performance:58,satisfaction:72,color:0, ordersFulfilled: 23, ordersPending: 83, ordersReturned: 10,
         quarterly:[800,1200,950,874],teamQ:[38000,41000,44000,46000],
         activity:[
             {icon:faReceipt,bg:'#E6F1FB',text:'Closed deal with Apex Corp — $874',time:'2h ago', createdAt: '2026-05-25T19:37:00'},
@@ -22,7 +22,7 @@ export const employeesDataList = [
         ],
         orders:[{id:1045,client:'Summit Inc',amount:'$4,200',status:'fulfilled'},{id:1046,client:'Delta LLC',amount:'$3,800',status:'fulfilled'},{id:1047,client:'Ridge Co',amount:'$2,100',status:'pending'}]
     },
-    {id:3,name:'Gavin Thompson',role:'Sales Rep',tenure:'2 yrs',sales:13842,ordersCompleted:19,target:15000,commission:1384,attendance:88,performance:79,satisfaction:83,color:2, ordersFulfilled: 200, ordersPending: 40, ordersReturned: 120,
+    {id:3,name:'Gavin Thompson',role:'Sales Rep',tenure:'2 yrs',sales:13842,ordersCompleted:19,target:15000,commission:1384,attendance:88,performance:79,satisfaction:83,color:2, ordersFulfilled: 200, ordersPending: 40, ordersReturned: 75,
         quarterly:[9000,11200,12900,13842],teamQ:[38000,41000,44000,46000],
         activity:[
             {icon:faReceipt,bg:'#EEEDFE',text:'Closed Horizon deal — $2,400',time:'3h ago', createdAt: '2026-05-25T16:37:00'},
@@ -52,7 +52,7 @@ export const employeesDataList = [
         ],
         orders:[{id:1054,client:'Zenith Corp',amount:'$3,100',status:'fulfilled'},{id:1055,client:'Blue Ridge',amount:'$1,400',status:'pending'},{id:1056,client:'Coda LLC',amount:'$600',status:'returned'}]
     },
-    {id:6,name:'Alyssa Boyd',role:'Junior Sales Rep',tenure:'6 mo',sales:366,ordersCompleted:3,target:8000,commission:37,attendance:85,performance:42,satisfaction:68,color:5, ordersFulfilled: 123, ordersPending: 23, ordersReturned: 10,
+    {id:6,name:'Alyssa Boyd',role:'Junior Sales Rep',tenure:'6 mo',sales:366,ordersCompleted:3,target:8000,commission:37,attendance:85,performance:42,satisfaction:68,color:5, ordersFulfilled: 88, ordersPending: 9, ordersReturned: 65,
         quarterly:[0,0,200,366],teamQ:[38000,41000,44000,46000],
         activity:[
             {icon:faPhone,bg:'#EAF3DE',text:'Completed sales onboarding program',time:'1d ago', createdAt: '2026-05-25T11:58:00'},
@@ -72,7 +72,7 @@ export const employeesDataList = [
         ],
         orders:[{id:1060,client:'Clio Corp',amount:'$2,800',status:'fulfilled'},{id:1061,client:'Apex Ltd',amount:'$2,100',status:'fulfilled'},{id:1062,client:'Surge Co',amount:'$1,200',status:'pending'}]
     },
-    {id:8,name:'Ava Anderson',role:'Sales Rep',tenure:'1.5 yrs',sales:1765,ordersCompleted:6,target:10000,commission:177,attendance:87,performance:52,satisfaction:71,color:7, ordersFulfilled: 87, ordersPending: 324, ordersReturned: 57,
+    {id:8,name:'Ava Anderson',role:'Sales Rep',tenure:'1.5 yrs',sales:1765,ordersCompleted:6,target:10000,commission:177,attendance:87,performance:52,satisfaction:71,color:7, ordersFulfilled: 113, ordersPending: 120, ordersReturned: 99,
         quarterly:[200,500,1200,1765],teamQ:[38000,41000,44000,46000],
         activity:[
             {icon:faPhone,bg:'#F1EFE8',text:'Rebooked 4 cancelled demos this week',time:'2h ago', createdAt: '2026-05-25T09:05:00'},

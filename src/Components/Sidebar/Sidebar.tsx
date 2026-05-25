@@ -13,7 +13,7 @@ function Sidebar({employees = [], selectedId, onSelect}: SidebarProps) {
     console.log(selectedId, 'selected id');
 
     const [search, setSearch] = useState('');
-    const [filter, setFilter] = useState<'all' | 'on-track' | 'needs-attention'>('all');
+    const [filter, setFilter] = useState('all');
 
 
     const filtered = (employees ?? []).filter(e => {
@@ -32,20 +32,34 @@ function Sidebar({employees = [], selectedId, onSelect}: SidebarProps) {
             <div className="d-flex flex-row justify-content-between" style={{marginBottom: '10px',
                 padding: '0px 5px'}}>
                 <div className="d-flex gap-1">
-                    <input className="form-check-input" type="radio" name="inlineRadioOptions" id="all"
-                           value="All"
-                           onClick={() => setFilter('all')}/>
+                    <input className="form-check-input"
+                           type="radio"
+                           name="inlineRadioOptions"
+                           id="all"
+                           value="all"
+                           checked={filter === 'all'}
+                           onClick={() => setFilter('all')}
+                    />
                     <label className="employee-radio-label" htmlFor="all">All</label>
                 </div>
                 <div className="d-flex gap-1">
-                    <input className="form-check-input" type="radio" name="inlineRadioOptions" id="onTrack"
+                    <input className="form-check-input"
+                           type="radio"
+                           name="inlineRadioOptions"
+                           id="onTrack"
                            value="on-track"
-                           onClick={() => setFilter('on-track')}/>
+                           checked={filter === 'on-track'}
+                           onClick={() => setFilter('on-track')}
+                    />
                     <label className="employee-radio-label" htmlFor="onTrack">On Track</label>
                 </div>
                 <div className="d-flex gap-1">
-                    <input className="form-check-input" type="radio" name="inlineRadioOptions" id="needsAttention"
+                    <input className="form-check-input"
+                           type="radio"
+                           name="inlineRadioOptions"
+                           id="needs-attention"
                            value="needs-attention"
+                           checked={filter === 'needs-attention'}
                            onClick={() => setFilter('needs-attention')}/>
                     <label className="employee-radio-label" htmlFor="needsAttention">Needs Attention</label>
                 </div>
