@@ -1,0 +1,44 @@
+.overview-widget {
+    background: var(--card-background);
+    box-shadow: var(--card-shadow);
+    color: var(--color-text-primary);
+    border-radius: var(--border-radius-lg);
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.emp-header-av {
+    width:82px;
+    height:82px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-weight:500;
+    flex-shrink:0;
+    background: var(--color-background-initials);
+    color:var(--color-text-initials);
+    border: 1px solid var(--color-background-initials);
+}
+
+.overview-status-pill {
+    font-size:12px;
+    font-weight:500;
+    padding: 10px 20px;
+    border-radius:20px;
+}
+
+.pill-green {
+    background:var(--color-background-success);
+    color:var(--color-text-light);
+}
+
+.pill-amber {
+    background:var(--color-background-warning);
+    color:var(--color-text-light);
+}
+
+.employee-subheader {
+    margin: 0;
+    text-align: center;
+}

@@ -1,0 +1,25 @@
+.metric-label {
+    color:var(--color-text-tertiary);
+    margin-bottom:0;
+}
+
+.metric-value {
+    font-size:28px;
+    font-weight:500;
+    color:var(--color-text-primary);
+    margin: 0;
+}
+
+
+.metric-subtext {
+    margin: 0;
+    font-size: 13px;
+}
+
+.green-text {
+    color:var(--color-text-success);
+}
+
+.red-text {
+    color:var(--color-text-danger);
+}

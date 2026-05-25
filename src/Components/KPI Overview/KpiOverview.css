@@ -1,0 +1,39 @@
+.kpi-row {
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+}
+
+.kpi-item {
+    display:flex;
+    flex-direction:column;
+    gap:4px;
+}
+
+.kpi-label-row {
+    display:flex;
+    justify-content:space-between;
+    font-size:12px;
+}
+
+.kpi-label {
+    color:var(--color-text-tertiary);
+}
+
+.kpi-val {
+    font-weight:500;
+    color:var(--color-text-primary);
+}
+
+.kpi-bar-bg {
+    /*height:6px;*/
+    background:var(--color-background-secondary);
+    border-radius:3px;
+    overflow:hidden;
+}
+
+.kpi-bar {
+    height:6px;
+    border-radius:3px;
+    transition:width 0.4s ease;
+}
