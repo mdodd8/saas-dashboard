@@ -38,7 +38,7 @@ function LineChartComponent({ data, employeeName }: QuarterlyChartProps) {
                         <Line
                             type="monotone"
                             dataKey="team"
-                            stroke="#F5C400"
+                            stroke="#dea145"
                             name="Team average"
                             strokeWidth={2}
                             strokeDasharray="4 3"

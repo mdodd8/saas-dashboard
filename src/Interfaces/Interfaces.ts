@@ -11,9 +11,9 @@ export interface MetricCardProps {
 
 // --- Line Chart Card ---
 export interface QuarterlyDataPoint {
-    quarter: string;        // "Q1", "Q2", "Q3", "Q4"
-    individual: number;     // the selected employee's sales that quarter
-    team: number;           // the team average/total that quarter
+    quarter: string;
+    individual: number;
+    team: number;
 }
 
 export interface QuarterlyChartProps {

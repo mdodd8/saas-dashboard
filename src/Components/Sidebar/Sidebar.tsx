@@ -4,7 +4,7 @@ import {useState} from "react";
 import {isOnTrack, getInitials} from "../../Utils/EmployeeUtils.ts";
 
 interface SidebarProps {
-    employees?: Employee[];   // optional with default
+    employees?: Employee[];
     selectedId: number | null;
     onSelect: (employee: Employee) => void;
 }

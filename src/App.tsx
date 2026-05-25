@@ -20,7 +20,7 @@ function App() {
             <div className="main" id="main">
                 {selectedEmployee
                     ? <EmployeeOverview employee={selectedEmployee} />
-                    : <EmptyDashboard />
+                    : <EmptyDashboard  />
                 }
             </div>
         </>
