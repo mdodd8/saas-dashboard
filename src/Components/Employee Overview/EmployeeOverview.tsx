@@ -57,7 +57,9 @@ function EmployeeOverview({employee}: EmployeeOverviewProps) {
                 <div className="common-row" style={{gridTemplateColumns: '2fr 1fr'}}>
                     <LineChartComponent data={quarterlyData}
                                         employeeName={employee.name}/>
-                    <DonutChart/>
+                    <DonutChart fulfilled={employee.ordersFulfilled}
+                                pending={employee.ordersPending}
+                                returned={employee.ordersReturned}/>
                 </div>
                 <div className="common-row">
                     <KpiOverview employee={employee}/>

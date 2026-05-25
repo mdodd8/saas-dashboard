@@ -22,13 +22,8 @@ export interface QuarterlyChartProps {
 }
 
 // --- Donut Chart Card ---
-export interface DonutSlice {
-    label: string;
-    value: number; // percentage 0–100
-    color: string;
-}
-
-export interface DonutChartCardProps {
-    title: string;
-    slices: DonutSlice[];
+export interface DonutChartProps {
+    fulfilled: number;
+    pending: number;
+    returned: number;
 }

@@ -13,6 +13,9 @@ export interface Employee {
     performance: number;
     satisfaction: number;
     color: number;
+    ordersFulfilled: number;
+    ordersPending: number;
+    ordersReturned: number;
     quarterly: number[];
     teamQ: number[];
     activity: {icon: IconDefinition, bg: string, text: string, time: string, createdAt: string}[],
