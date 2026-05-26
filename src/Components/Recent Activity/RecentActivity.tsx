@@ -27,7 +27,7 @@ function RecentActivity({ activities }: RecentActivityProps) {
                             key={a.createdAt}>
                                 <div className="activity-icon" >
                                     <FontAwesomeIcon icon={a.icon}/>
-                                    <i className="ti ${a.icon}" style={{fontSize: '14px', color: 'var(--color-text-secondary)'}} aria-hidden="true"></i></div>
+                                    <i className="ti ${a.icon}" style={{fontSize: '14px', color: 'var(--color-text-tertiary)'}} aria-hidden="true"></i></div>
                                 <div>
                                     <div className="activity-text">{a.text}</div>
                                     <div className="activity-time">{a.time}</div>

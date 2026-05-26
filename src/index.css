@@ -3,6 +3,7 @@
     --card-background: #FFFFFF;
     --card-shadow: 0 2px 8px rgba(15, 23, 42, 0.06);
     --sidebar-background-primary: #0F172A;
+    --color-background-secondary: #262624;
     --sidebar-background-active: #4F46E5;
     --sidebar-background-hover: #312E81;
     --sidebar-text-primary: #CBD5E1;
@@ -11,73 +12,22 @@
     --color-background-initials: #e9f1fa;
     --color-text-initials: #274578;
     --color-text-tertiary: #9c9a92;
-
-
-
-    /*--color-text-primary: #faf9f5;*/
-    --color-text-secondary: #c2c0b6;
-    --color-text-info: #80aadd;
-
-    --color-text-inverse: #141413;
-    --color-text-disabled: #faf9f580;
-    --color-text-ghost: #9c9a9280;
-    --color-background-secondary: #262624;
-    --color-background-info: #253e5f;
-    --color-background-primary: #30302e;
-    --color-background-success: #639922;
     --color-text-success: #7ab948;
-    --color-background-warning: #BA7517;
     --color-text-warning: #d1a041;
-    --color-background-danger: #602a28;
     --color-text-danger: #ee8884;
-    --border-radius-md: 5px;
+    --color-background-success: #639922;
+    --color-background-warning: #BA7517;
+    --color-background-danger: #602a28;
     --color-border-tertiary: #dedcd126;
-    --color-border-primary: #dedcd166;
-    --color-border-secondary: #dedcd14d;
-    --color-border-inverse: #14141326;
-    --color-border-ghost: #dedcd100;
-    --color-border-info: #4682d5;
-    --color-border-danger: #cd5c58;
-    --color-border-success: #599130;
-    --color-border-warning: #a87829;
-    --color-border-disabled: #dedcd11a;
-    --color-background-tertiary: #141413;
-    --color-background-inverse: #faf9f5;
-    --color-background-ghost: #30302e00;
-    --color-background-disabled: #30302e80;
-
-
+    color-scheme: light dark;
+    font: 18px/145% var(--sans);
+    letter-spacing: 0.18px;
     --border-radius-lg: 10px;
-    --border-radius-sm: 2px;
-    --border-radius-md: 5px;
-
-
-
-    --text: #6b6375;
-  --text-h: #08060d;
-  --bg: #fff;
-  --border: #e5e4e7;
-  --code-bg: #f4f3ec;
-  --accent: #aa3bff;
-  --accent-bg: rgba(170, 59, 255, 0.1);
-  --accent-border: rgba(170, 59, 255, 0.5);
-  --social-bg: rgba(244, 243, 236, 0.5);
-  --shadow:
     rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
 
   --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
   --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
   --mono: ui-monospace, Consolas, monospace;
-
-  font: 18px/145% var(--sans);
-  letter-spacing: 0.18px;
-  color-scheme: light dark;
-  color: var(--text);
-  background: var(--bg);
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 
   @media (max-width: 1024px) {
     font-size: 16px;

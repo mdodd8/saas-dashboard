@@ -33,7 +33,7 @@ function EmptyDashboard() {
                                 subtext={`8.1% vs last month`}
                                 colorClass={'green-text'}/>
                     <MetricCard label="Avg Performance"
-                                value={`${getAveragePerformance(employeesDataList).toLocaleString()}`}
+                                value={`${getAveragePerformance(employeesDataList).toLocaleString()}/100`}
                                 icon={faArrowTrendUp} subtext="3.2% vs last month"
                                 colorClass={'green-text'}/>
                     <MetricCard label="Reps on track"
