@@ -39,7 +39,7 @@ function EmptyDashboard() {
                     <MetricCard label="Reps on track"
                                 value={`${getOnTrackEmployees(employeesDataList).length.toLocaleString()}`}
                                 icon={faArrowTrendDown}
-                                subtext={'2 need attention'}
+                                subtext={'3 need attention'}
                                 colorClass={ 'red-text' }
                     />
                 </div>
