@@ -23,7 +23,6 @@
     font: 18px/145% var(--sans);
     letter-spacing: 0.18px;
     --border-radius-lg: 10px;
-    rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
 
   --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
   --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
@@ -36,9 +35,92 @@
 
 
 #root {
-    background-color: var(--sidebar-background-primary);
+    height: 100vh;
+    overflow: hidden;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    background-color: var(--sidebar-background-primary);
+}
+
+
+.app-layout {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
     overflow: hidden;
 }
 
+.app-body {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+    position: relative;
+}
+
+.sidebar-wrap {
+    flex-shrink: 0;
+    height: 100%;
+    overflow-y: auto;
+    border-right: 1px solid var(--color-border-tertiary);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.back-btn {
+    display: none;
+}
+
+/*MOBILE VIEW*/
+@media (max-width: 768px) {
+
+    .sidebar-wrap {
+        inset: 0;
+        top: 52px;
+        z-index: 10;
+        transform: translateX(0);
+        opacity: 1;
+        transition: transform 0.3s ease, opacity 0.25s ease;
+        background: var(--sidebar-background-primary);
+    }
+
+    .sidebar-wrap.mobile-hidden {
+        transform: translateX(-100%);
+        display: none;
+    }
+
+    .main {
+        padding: 0 10px !important;
+    }
+
+    .back-btn {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        border: none;
+        font-size: 13px;
+        font-weight: 500;
+        cursor: pointer;
+        font-family: inherit;
+        position: sticky;
+        top: 0;
+        z-index: 5;
+        background: #f6f7fb;
+        width: 100%;
+        padding: 5px;
+        text-decoration: underline;
+        color: var(--color-text-primary);
+
+    }
+
+    .back-btn.mobile-hidden {
+        display: none;
+    }
+
+    .back-btn:hover {
+        background: var(--color-background-secondary);
+    }
+
+    .app-body {
+        position: relative;
+        overflow: hidden;
+    }
+}

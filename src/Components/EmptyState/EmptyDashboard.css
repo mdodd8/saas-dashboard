@@ -1,12 +1,11 @@
-.leaderboard-header {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
+.empty-state-widget {
+    flex-direction: row;
     justify-content: center;
-    font-size: 16px;
-    flex-shrink: 0;
-    background: var(--color-background-initials);
-    color: var(--color-text-initials);
+    background: var(--card-background);
+    box-shadow: var(--card-shadow);
+    color: var(--color-text-primary);
+    border-radius: var(--border-radius-lg);
+    padding: 1.5rem;
+    text-align: center;
+    align-items: center;
 }

@@ -87,3 +87,16 @@
     margin-top:2px;
 }
 
+.radio-container {
+    flex-direction: row;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        max-width: 230px;
+    }
+
+    .radio-container {
+        flex-direction: column;
+    }
+}

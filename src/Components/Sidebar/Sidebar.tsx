@@ -29,7 +29,7 @@ function Sidebar({employees = [], selectedId, onSelect}: SidebarProps) {
     return (
         <div className="sidebar">
 
-            <div className="d-flex flex-row justify-content-between" style={{marginBottom: '10px',
+            <div className="radio-container d-flex justify-content-between" style={{marginBottom: '10px',
                 padding: '0px 5px'}}>
                 <div className="d-flex gap-1">
                     <input className="form-check-input"
@@ -38,7 +38,7 @@ function Sidebar({employees = [], selectedId, onSelect}: SidebarProps) {
                            id="all"
                            value="all"
                            checked={filter === 'all'}
-                           onClick={() => setFilter('all')}
+                           onChange={() => setFilter('all')}
                     />
                     <label className="employee-radio-label" htmlFor="all">All</label>
                 </div>
@@ -49,7 +49,7 @@ function Sidebar({employees = [], selectedId, onSelect}: SidebarProps) {
                            id="onTrack"
                            value="on-track"
                            checked={filter === 'on-track'}
-                           onClick={() => setFilter('on-track')}
+                           onChange={() => setFilter('on-track')}
                     />
                     <label className="employee-radio-label" htmlFor="onTrack">On Track</label>
                 </div>
@@ -60,7 +60,7 @@ function Sidebar({employees = [], selectedId, onSelect}: SidebarProps) {
                            id="needs-attention"
                            value="needs-attention"
                            checked={filter === 'needs-attention'}
-                           onClick={() => setFilter('needs-attention')}/>
+                           onChange={() => setFilter('needs-attention')}/>
                     <label className="employee-radio-label" htmlFor="needsAttention">Needs Attention</label>
                 </div>
             </div>

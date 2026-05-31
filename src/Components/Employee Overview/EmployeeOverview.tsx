@@ -19,7 +19,7 @@ function EmployeeOverview({employee}: EmployeeOverviewProps) {
 
     return (
         <>
-            <div className="overview-widget d-flex flex-row justify-content-between">
+            <div className="overview-widget d-flex">
                 <div className="emp-header-av">{getInitials(employee.name)}</div>
                 <div className="d-flex flex-column">
                     <h2>{employee.name}</h2>

@@ -3,6 +3,7 @@ import {getAveragePerformance, getOnTrackEmployees, getTotalOrders, getTotalSale
 import {faArrowTrendDown, faArrowTrendUp, faArrowLeft} from "@fortawesome/free-solid-svg-icons";
 import {employeesDataList} from "../../Data/EmployeesDataList.ts"
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import "./EmptyDashboard.css";
 
 
 
@@ -12,7 +13,7 @@ function EmptyDashboard() {
      console.log(getOnTrackEmployees(employeesDataList));
     return (
         <>
-            <div className="overview-widget d-flex flex-row gap-5 align-items-center">
+            <div className="empty-state-widget d-flex gap-5">
                 <div className="emp-header-av">
                     <FontAwesomeIcon icon={faArrowLeft}/>
                     </div>

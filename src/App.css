@@ -17,5 +17,7 @@
     margin: 0;
     padding: 1rem 2rem;
     background-color: var(--main-background);
+    height: 100%;           /* ← must be explicit */
+    overflow-y: auto;
 }
 
